@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Anime List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SenaAnime</h1>
+    <form id="search-form">
+      <input type="text" name="search" id="search" placeholder="Search for anime...">
+      <select id="genre-select">
+        <option value="">All Genres</option>
+        <option value="1">Action</option>
+        <option value="2">Adventure</option>
+        <option value="4">Comedy</option>
+        <option value="8">Drama</option>
+        <option value="10">Fantasy</option>
+        <option value="27">Shounen</option>
+      </select>
+      <button class="btn-submit" type="submit">Submit</button>
+    </form>
+  </header>
+  <h1 class="title">Top Anime List</h1>
+  <div id="anime-list" class="anime-list">
+    <img src="assets/loading.gif" alt="Loading">
+  </div>
+  <div class="loading" id="loading">Loading...</div>
+  <div id="pagination" class="pagination"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
